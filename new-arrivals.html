@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Cars</title>
+    <style>
+      
+        /* Reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:dimgrey;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Container for car cards */
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual car card styling */
+        .car-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:grey;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Hover effect for car cards */
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Car images */
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Title styling */
+        .car-card h3 {
+            font-size: 1.5em;
+            color:grey;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Price and description styling */
+        .car-card p {
+            font-size: 0.9em;
+            color:grey;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Highlighted price styling */
+        .car-card p strong {
+            font-size: 1.2em;
+            color: #d9534f;
+        }
+
+        /* Key specs list styling */
+        .text-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .text-box ul li {
+            font-size: 0.9em;
+            color: #333;
+            padding: 5px 0;
+            border-top: 1px solid grey;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .car-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .car-card {
+                width: 100%;
+                max-width: 90%;
+                
+            }
+        }
+
+
+
+        /* Reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:snow;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Container for car cards */
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual car card styling */
+        .car-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:papayawhip;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Hover effect for car cards */
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Car images */
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Title styling */
+        .car-card h3 {
+            font-size: 1.5em;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Price and description styling */
+        .car-card p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Highlighted price styling */
+        .car-card p strong {
+            font-size: 1.2em;
+            color: #d9534f;
+        }
+
+        /* Key specs list styling */
+        .text-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .text-box ul li {
+            font-size: 0.9em;
+            color: #333;
+            padding: 5px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .car-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .car-card {
+                width: 100%;
+                max-width: 90%;
+            }
+          }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px;">Upcoming Cars</h1>
+
+    <div class="car-cards">
+        <!-- Car 1: Toyota Land Cruiser 250 -->
+        <div class="car-card">
+            <img src="land-cruiser 250.jpg" alt="Toyota Land Cruiser 250">
+            <h3>Land Cruiser 250</h3>
+            <p><strong>₹1 Cr*</strong></p>
+            <p>Expected Launch Date: Dec 15, 2024</p>
+            <h4>Key Specs</h4>
+            <ul>
+                <li>Engine: 2998 cc</li>
+                <li>Fuel Type: Petrol</li>
+                <li>Transmission: Automatic</li>
+            </ul>
+        </div><br>
+
+        <!-- Car 2: Volvo EX90 -->
+        <div class="car-card">
+            <img src="volvo.jpg" alt="Volvo Ex 90">
+            <h3>Volvo Ex 90</h3>
+            <p><strong>₹1.50 Cr*</strong></p>
+            <p>Expected Launch Date - Dec 15, 2024</p>
+            <h4>Key Specs</h4>
+            <ul>
+              <li>Fuel Type: Electric</li>
+            </ul>
+        </div><br>
+
+        <!-- Car 3: BMW M3 -->
+        <div class="car-card">
+            <img src="bmw-m3.jpg" alt="BMW M3">
+            <h3>BMW M3</h3>
+            <p><strong>₹1.47 Cr*</strong></p>
+            <p>Expected Launch Date - Dec 01, 2024</p>
+            <h4>Key Specs</h4>
+            <ul>
+              <li>Engine: 2998cc</li>
+              <li>Fuel: Petrol</li>
+              <li>Transmission Type: Automatic</li>
+            </ul>
+        </div><br>
+    
+</body>
+
+
+<div class="car-cards">
+  <!-- Car 1: Mercedes-Benz AMG GT Coupe-->
+  <div class="car-card">
+      <img src="amg gt coupe.jpg" alt="Mercedes-Benz AMG GT Coupe">
+      <h3>Mercedes-Benz AMG GT Coupe</h3>
+      <p><strong>₹3 Cr*</strong></p>
+      <p>Expected Launch Date: Dec 16, 2024</p>
+      <h4>Key Specs</h4>
+      <ul>
+          <li>Engine: 3982 cc</li>
+          <li>Fuel Type: Petrol</li>
+          <li>Transmission: Automatic</li>
+      </ul>
+  </div>
+
+  <!-- Car 2: Mercedes-Benz V-Class -->
+  <div class="car-card">
+      <img src="v-class.jpg" alt="Mercedes-Benz V-Class 2024">
+      <h3>Mercedes-Benz V-Class 2024</h3>
+      <p><strong>₹1 Cr*</strong></p>
+      <p>Expected Launch Date - Dec 15, 2024</p>
+      <h4>Key Specs</h4>
+      <ul>
+        <li>Engine: 1950 cc</li>
+          <li>Fuel Type: Petrol</li>
+          <li>Transmission: Automatic</li>
+      </ul>
+  </div>
+
+  <!-- Car 3: Skoda Enyaq iV -->
+  <div class="car-card">
+      <img src="bmw-m3.jpg" alt="Skoda Enyaq iV">
+      <h3>Skoda Enyaq iV</h3>
+      <p><strong>₹65 Lakh*</strong></p>
+      <p>Expected Launch Date - Dec 15, 2024</p>
+      <h4>Key Specs</h4>
+      <ul>
+        <li>Fuel Type: Electric</li>
+      </ul>
+  </div>
+
+</body>
+</html>
+
+</html>

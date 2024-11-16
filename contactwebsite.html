@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:silver;
+        }
+
+        .container {
+            width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .container .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact-info i {
+            font-size: 20px;
+            color: #ff5722;
+            margin-right: 8px;
+        }
+
+        .container input, .container textarea, .container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .container textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .file-input {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .file-input input[type="file"] {
+            margin-left: 10px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .checkbox input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .checkbox a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>LET US CONTACT YOU</h2>
+    
+    <div class="contact-info">
+        <i class="material-icons">email</i>
+        <span>support@carfusion.com</span>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Enter Name" required>
+        <input type="email" placeholder="Enter Email" required>
+        <input type="text" placeholder="Enter Mobile Number" required>
+        <input type="text" placeholder="City" required>
+        
+        <textarea placeholder="Please share your feedback what can we improve?"></textarea>
+        
+        <div class="file-input">
+            <label for="file">Choose File</label>
+            <input type="file" id="file" accept=".jpg,.png">
+            <span>Upload .jpg, .png files only.</span>
+        </div>
+        
+        <div class="checkbox">
+            <input type="checkbox" required>
+            <label>I agree to <a href="#">Terms & Conditions</a></label>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        /* Reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:dimgrey;
+            color:white;
+            padding: 20px;
+        }
+
+        /* Container for car cards */
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual car card styling */
+        .car-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:grey;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Hover effect for car cards */
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Car images */
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Title styling */
+        .car-card h3 {
+            font-size: 1.5em;
+            color:grey;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Price and description styling */
+        .car-card p {
+            font-size: 0.9em;
+            color:grey;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Highlighted price styling */
+        .car-card p strong {
+            font-size: 1.2em;
+            color: #d9534f;
+        }
+
+        /* Key specs list styling */
+        .text-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .text-box ul li {
+            font-size: 0.9em;
+            color: #333;
+            padding: 5px 0;
+            border-top: 1px solid grey;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .car-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .car-card {
+                width: 100%;
+                max-width: 90%;
+                
+            }
+        }
+
+
+
+        /* Reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:snow;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Container for car cards */
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual car card styling */
+        .car-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:aliceblue;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Hover effect for car cards */
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Car images */
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Title styling */
+        .car-card h3 {
+            font-size: 1.5em;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Price and description styling */
+        .car-card p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Highlighted price styling */
+        .car-card p strong {
+            font-size: 1.2em;
+            color: #d9534f;
+        }
+
+        /* Key specs list styling */
+        .text-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .text-box ul li {
+            font-size: 0.9em;
+            color: #333;
+            padding: 5px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .car-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .car-card {
+                width: 100%;
+                max-width: 90%;
+            }
+          }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px;">Electric Cars</h1>
+
+    <div class="car-cards">
+        <!-- Car 1: MG Windsor Ev-->
+        <div class="car-card">
+            <img src="mg.jpg" alt="MG Windsor Ev">
+            <h3>MG Windsor EV</h3>
+            <p><strong>₹.13.50 - 15.50 Lakh*</strong></p>
+            <p>Last Recorded Price</p>
+            
+            
+        </div><br>
+
+        <!-- Car 2: Tata Nexon EV -->
+        <div class="car-card">
+            <img src="nexon ev.jpg" alt="Tata Nexon EV">
+            <h3>Tata Nexon EV</h3>
+            <p><strong>₹12.49 - 17.19 Lakh*</strong></p>
+            <p>Last Recorded Price</p>
+            
+        </div><br>
+
+        <!-- Car 3: BMW i4 -->
+        <div class="car-card">
+            <img src="i4.jpg" alt="BMW i4">
+            <h3>BMW i4</h3>
+            <p><strong>₹72.50 - 77.50 Lakh*</strong></p>
+            <p>Last Recorded Price</p>
+            
+        </div><br>
+    
+</body>
+
+
+<div class="car-cards">
+  <!-- Car 1:Kia EV6 -->
+  <div class="car-card">
+      <img src="kia ev6.webp" alt="Kia EV6">
+      <h3>Kia EV6</h3>
+      <p><strong>₹60.97 - 65.97 Lakh*</strong></p>
+      <p>Last Recorded Price</p>
+      
+  </div>
+
+  <!-- Car 2: Mercedes-Benz EQA -->
+  <div class="car-card">
+      <img src="eqa.jpg" alt="Mercedes-Benz EQA">
+      <h3>Mercedes-Benz EQA</h3>
+      <p><strong>₹1 Cr*</strong></p>
+      <p>Last Recorded Price</p>
+      
+  </div>
+
+  <!-- Car 3: Audi e-tron GT -->
+  <div class="car-card">
+      <img src="audi-gt.jpg" alt="Audi e-tron GT">
+      <h3>Audi e-tron GT</h3>
+      <p><strong>₹1.72 - 1.95 Crore</strong></p>
+      <p>Last Recorded Price</p>
+      
+  </div>
+
+</body>
+</html>
